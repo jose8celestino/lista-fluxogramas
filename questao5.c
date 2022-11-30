@@ -6,19 +6,15 @@ Finalize quando numero lido for 0
 
 #include <stdio.h>
 #include <stdbool.h>
+int x, soma, produto=1;
 
 int main(){
-    int soma = 0;
-    int produto = 1;
-    int contador = 0;
-
-    int x;
 
     while (true) {
         printf("Insira um número: ");
         scanf("%d", &x);
 
-        if (x==0 && contador!=0){
+        if (x==0){
             printf("Soma = %d", soma);
             printf("\nProduto =%d", produto);
             break;
@@ -27,7 +23,6 @@ int main(){
             soma += x;
             produto *= x;
         }
-        contador += 1;
     }
 
     return 0;
