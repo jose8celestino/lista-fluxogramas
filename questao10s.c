@@ -23,7 +23,7 @@ int main(){
         printf("Qual é o nome do %dº aluno? ", i+1);
         
         char nome[50];
-        scanf("%c", &nome);
+        scanf("%s", &nome);
 
         double notas[3];
 
@@ -35,7 +35,7 @@ int main(){
         }
         aluno x = {.nome = nome, .media = (notas[0] + notas[1] + notas[2])/3};
 
-        printf("As notas do %dº aluno foram %.2lf, %.2lf, %.2lf e sua média foi %lf ", i, notas[0], notas[1], notas[2], x.media);
+        printf("As notas do %dº aluno foram %.2lf, %.2lf, %.2lf e sua média foi %.1lf \n", i+1, notas[0], notas[1], notas[2], x.media);
 
     }
 

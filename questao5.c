@@ -15,8 +15,7 @@ int main(){
         scanf("%d", &x);
 
         if (x==0){
-            printf("Soma = %d", soma);
-            printf("\nProduto =%d", produto);
+            printf("Soma = %d\nProduto =%d", soma, produto);
             break;
         }
         else if (x>2 && x<100 && x!=10 && x!=20 && x!=32){
